@@ -1,0 +1,21 @@
+"https://raw.githubusercontent.com/jbrownlee/Datasets/master/daily-min-temperatures.csv" 
+import pandas as pd
+from sklearn.cluster import KMeans
+import numpy as np
+from sklearn.preprocessing import StandardScaler
+data = pd.DataFrame({'custId':[25, 45, 35, 23, 31],
+                     'Age':[25, 45, 35, 23, 31],
+                     'Income':[50000, 80000, 60000, 40000, 70000],
+                     'Spending_score':[60, 20, 80, 90, 40]})
+# Sample time series
+data = [112,118,132,129,121,135,148,148,136,119,104,118]
+texts = [
+    "Win a free iPhone now",
+    "Hey, are we meeting today?",
+    "Congratulations! You won a lottery",
+    "Can you call me later?",
+    "Limited offer! Claim your prize now",
+    "how are you?"
+]
+
+labels = [1, 0, 1, 0, 1,0]  
